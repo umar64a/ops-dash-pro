@@ -1,0 +1,86 @@
+.dashboard-body {
+  padding: 30px;
+}
+.dashboard-body h1 {
+  color: #1e293b;
+  text-align: center;
+}
+.summary-cards {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 50px 80px;
+  flex-wrap: wrap;
+}
+.card-head {
+  color: #3b82f6;
+  position: absolute;
+  top: 20px;
+}
+.card-temp {
+  font-size: 30px;
+}
+.head-i {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+.card-i {
+  margin-right: 5px;
+}
+.p-i {
+  color: orange;
+}
+.h-i,
+.hp-i {
+  color: red;
+}
+.d-i {
+  color: green;
+}
+#err{
+  color: red;
+}
+.card {
+  text-align: center;
+  position: relative;
+  color: #1e293b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 250px;
+  padding: 0 25px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+.card span {
+  display: block;
+  font-weight: bold;
+}
+.card-spn {
+  margin-bottom: 20px;
+}
+.city {
+  font-size: 18px;
+}
+@media (max-width: 1115px) {
+  .summary-cards {
+    gap: 50px;
+  }
+}
+@media (max-width: 1115px) {
+  .summary-cards {
+    gap: 50px 100px;
+  }
+}
+@media (max-width: 800px) {
+  .summary-cards {
+    gap: 30px;
+  }
+}
+@media (max-width: 705px) {
+  .summary-cards {
+    gap: 30px;
+  }
+}

@@ -1,0 +1,26 @@
+.error-boundary {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  color: #1e293b;
+  text-align: center;
+}
+.error-boundary div {
+  padding: 50px;
+}
+.error-boundary p {
+  margin: 50px 0;
+}
+.error-boundary button {
+  background-color: #3b82f6;
+  outline: none;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.error-boundary button:hover {
+  background-color: #3575dd;
+  color: rgb(223, 223, 223);
+}

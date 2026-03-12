@@ -1,0 +1,395 @@
+#fileInput {
+  display: none;
+}
+.file-body {
+  position: relative;
+  padding: 30px;
+}
+.file-body h1 {
+  color: #1e293b;
+}
+#big-name {
+  display: none;
+}
+#small-status {
+  display: none;
+}
+.upload-con {
+  display: inline-block;
+  z-index: 1;
+  position: sticky;
+  top: 120px;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px 0 30px 0;
+  max-width: 813px;
+  background-color: #1e293b;
+  transition: opacity 0.4s ease-in-out;
+}
+.scrolled {
+  opacity: 0.5;
+}
+.preview-con {
+  position: relative;
+  padding-bottom: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-height: 280px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  margin-bottom: 20px;
+  border-bottom: 1px solid gray;
+}
+.upload-btn {
+  height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: #3b82f6;
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+  width: 100%;
+}
+.upload-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.upload-btn:hover {
+  color: rgb(216, 216, 216);
+  background-color: #2c64bd;
+}
+.preview-con label {
+  cursor: pointer;
+}
+.f-drag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed #3b82f6;
+  border-radius: 5px;
+  color: white;
+  height: 156px;
+  width: 176px;
+}
+.f-drag div {
+  text-align: center;
+}
+.prev {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #27354d;
+  height: 140px;
+  width: 160px;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+.prev div {
+  text-align: center;
+}
+.prev img {
+  height: 37px;
+}
+.f-i {
+  padding: 7px 5px 7px 5px;
+  border-radius: 3px;
+  font-size: 23px;
+}
+.prev button {
+  right: 8px;
+  cursor: pointer;
+  top: 5px;
+  font-size: 15px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  outline: none;
+  position: absolute;
+}
+.prev button:hover {
+  color: rgb(216, 216, 216);
+}
+.prev span {
+  margin-top: 10px;
+  display: block;
+}
+.f-drag:hover .drag-i {
+  color: rgb(216, 216, 216);
+}
+.f-drag:hover {
+  border-color: #2c64bd;
+}
+.f-drag:hover {
+  background-color: #27354d;
+}
+#drag-spn {
+  color: #3b82f6;
+  font-weight: bold;
+}
+.drag-i {
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+  background-color: #3b82f6;
+}
+.drag-spn {
+  color: gray;
+  font-size: 15px;
+}
+.f-drag span {
+  display: block;
+  margin-top: 13px;
+}
+.emt {
+  margin-top: 35px;
+  text-align: center;
+  color: #1e293b;
+  font-size: 17px;
+}
+.icon-code {
+  color: rgb(2, 167, 2);
+  background-color: rgb(43, 77, 43);
+}
+.icon-image {
+  color: yellow;
+  background-color: rgb(167, 167, 50);
+}
+.icon-pdf {
+  color: red;
+  background-color: rgb(88, 45, 45);
+}
+.icon-default {
+  color: #3b82f6;
+  background-color: #304972;
+}
+.icon-excel {
+  color: orange;
+  background-color: rgb(151, 114, 44);
+}
+.icon-word {
+  color: purple;
+  background-color: rgb(59, 34, 59);
+}
+.icon-zip {
+  color: rgb(170, 170, 170);
+  background-color: rgb(102, 101, 101);
+}
+.file {
+  background-color: white;
+  color: #1e293b;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  margin-top: 25px;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+.f-load {
+  text-align: center;
+  font-size: 18px;
+  color: #1e293b;
+}
+.h-f {
+  position: sticky;
+  top: 70px;
+  background-color: #f1f5f9;
+  color: #1e293b;
+  font-weight: normal;
+  border: 1px solid #1e293b;
+  margin: 0 0 30px;
+}
+.f-icon {
+  padding: 7px 5px 7px 5px;
+  border-radius: 3px;
+  font-size: 23px;
+}
+.name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 300px;
+  word-break: break-all;
+}
+.size {
+  width: 100px;
+}
+.type {
+  width: 100px;
+}
+.status {
+  width: 100px;
+}
+.act {
+  width: 52px;
+  display: flex;
+  justify-content: center;
+}
+.act button {
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: red;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 7px;
+  background-color: rgba(216, 216, 216, 0.5);
+}
+.act button:hover {
+  color: rgb(202, 0, 0);
+  background-color: rgba(196, 196, 196, 0.5);
+}
+@media (max-width: 1115px) {
+  .upload-con {
+    max-width: 613px;
+  }
+}
+@media (max-width: 1000px) {
+  .upload-con {
+    max-width: 413px;
+  }
+}
+@media (max-width: 900px) {
+  .name {
+    width: 250px;
+  }
+}
+@media (max-width: 750px) {
+  .upload-con {
+    top: 110px;
+    max-width: 393px;
+  }
+  .h-f {
+    top: 65px;
+  }
+  .preview-con {
+    max-height: 230px;
+  }
+  .file {
+    font-size: 15px;
+    padding: 8px;
+  }
+  .emt {
+    margin-top: 50px;
+    font-size: 16px;
+  }
+  .f-icon {
+    font-size: 20px;
+    padding: 6px 4px 6px 4px;
+  }
+  .act button {
+    font-size: 18px;
+    padding: 6px 6px 5px 6px;
+  }
+  .file-body {
+    padding: 10px;
+  }
+  .name {
+    width: 200px;
+  }
+  .status {
+    width: 92px;
+  }
+  .f-drag {
+    height: 137px;
+    width: 167px;
+  }
+  .prev {
+    height: 140px;
+    width: 150px;
+    padding: 0 10px;
+  }
+  .prev span {
+    font-size: 13px;
+  }
+  .drag-spn {
+    font-size: 14px;
+  }
+  #drag-spn {
+    font-size: 15px;
+  }
+  .prev button {
+    right: 6px;
+    top: 3px;
+    font-size: 14px;
+  }
+  .f-drag span {
+    margin-top: 10px;
+  }
+  .drag-i {
+    font-size: 14px;
+  }
+  .upload-con {
+    margin: 15px 0 25px 0;
+    padding: 18px;
+  }
+  .upload-btn {
+    font-size: 14px;
+  }
+  .preview-con {
+    margin-bottom: 18px;
+    padding-bottom: 18px;
+  }
+}
+@media (max-width: 680px) {
+  .type {
+    display: none;
+  }
+  #small-name {
+    display: none;
+  }
+  #big-name {
+    display: inline-block;
+  }
+}
+@media (max-width: 610px) {
+  .upload-con {
+    top: 157px;
+  }
+  .h-f {
+    top: 113px;
+  }
+}
+@media (max-width: 550px) {
+  .name {
+    width: 180px;
+  }
+}
+@media (max-width: 500px) {
+  .name {
+    width: 150px;
+  }
+  #big-status {
+    display: none;
+  }
+  #small-status {
+    display: inline-block;
+    text-align: center;
+  }
+  .status {
+    width: 45px;
+  }
+}
+@media (max-width: 465px) {
+  .upload-con {
+    max-width: 173px;
+  }
+  .preview-con {
+    max-height: 301px;
+  }
+  #box {
+    max-width: 203px;
+  }
+}
+@media (max-width: 435px) {
+  .name {
+    width: 113px;
+  }
+}

@@ -1,0 +1,759 @@
+.form {
+  position: relative;
+  background-color: white;
+  padding: 25px 30px 30px 30px;
+  border-radius: 5px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 90vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.form h2 {
+  text-align: center;
+  color: #3b82f6;
+}
+.not-task {
+  margin-top: 130px;
+  color: #1e293b;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+.form textarea {
+  height: 100px;
+  width: 790px;
+  padding: 10px;
+  resize: none;
+  outline: none;
+}
+.date {
+  margin: 5px 0 0 0;
+  width: 800px;
+}
+#f-h {
+  color: green;
+}
+.in {
+  margin: 20px 0 0 0;
+  width: 800px;
+}
+.f-con {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tag {
+  margin: 5px 0 0 0;
+  width: 386px;
+}
+.label {
+  margin-top: 15px;
+  display: block;
+}
+.select {
+  margin-top: 20px;
+  padding: 5px;
+  width: 400px;
+  outline: none;
+}
+.s {
+  margin-right: 12px;
+}
+.cross {
+  background-color: black;
+  border-radius: 50px;
+  height: 30px;
+  width: 30px;
+  color: white;
+  border: none;
+  outline: none;
+  position: absolute;
+  font-size: 15px;
+  right: 7px;
+  top: 7px;
+  cursor: pointer;
+}
+.cross:hover {
+  background-color: rgb(49, 49, 49);
+  color: rgb(214, 214, 214);
+}
+.btn {
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  width: 400px;
+  padding: 10px 0 10px 0;
+}
+#csl {
+  background-color: #dadada;
+  color: red;
+  border: none;
+  margin-left: 14px;
+}
+#csl:hover {
+  background-color: #cccbcb;
+  color: black;
+}
+.up {
+  background-color: green;
+  color: white;
+}
+.up:hover {
+  background-color: rgb(0, 100, 0);
+  color: rgb(214, 214, 214);
+}
+.add-btn {
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 50px;
+  width: 815px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 10px 0 10px 0;
+  display: block;
+}
+#att-lbl {
+  display: inline-block;
+}
+.add-btn:hover {
+  background-color: #3575dd;
+  color: rgb(214, 214, 214);
+}
+.title,
+.date,
+.tag,
+.form textarea,
+.select {
+  border-radius: 3px;
+  border: 1px solid #646464;
+  transition: 0.2s ease;
+}
+.title,
+.date,
+.tag {
+  height: 20px;
+}
+.title:hover,
+.date:hover,
+.tag:hover,
+.form textarea:hover,
+.select:hover {
+  border-color: black;
+}
+.title:focus,
+.tag:focus,
+.date:focus,
+.form textarea:focus,
+.select:focus {
+  border-color: #4c8bf5;
+  box-shadow: 0 0 0 2px rgba(76, 139, 245, 0.2);
+}
+.add-btn:disabled,
+.up:disabled,
+.cross:disabled,
+.bulk-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.i {
+  margin-right: 5px;
+}
+.f-in {
+  display: none;
+}
+.f-btn {
+  width: 110px;
+  margin-top: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 7px;
+  background: #f8fafc;
+  border: 2px dashed #94a3b8;
+}
+.f-btn:hover {
+  background: #eef2f7;
+  border-color: #64748b;
+}
+.f-prev {
+  text-align: center;
+  position: relative;
+  border-radius: 3px;
+  padding: 13px 10px 10px 10px;
+  color: white;
+  background: #4c8bf5;
+}
+.f-prev span {
+  display: block;
+  margin-top: 5px;
+}
+.att-con {
+  width: 810px;
+  height: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.x {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  border: none;
+  outline: none;
+  color: #ececec;
+  cursor: pointer;
+  background-color: transparent;
+}
+.x:hover {
+  color: #dadada;
+}
+.task-body {
+  padding: 30px;
+}
+.task-body h1 {
+  color: #1e293b;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.task-btn {
+  background-color: #1e293b;
+  padding: 10px;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.task-btn:hover {
+  color: rgb(224, 224, 224);
+  background-color: #243146;
+}
+.filter-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  z-index: 1;
+  top: 80px;
+  transition: opacity 0.4s ease-in-out;
+}
+.filter-bar {
+  border-radius: 5px;
+  background-color: #1e293b;
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.filter-bar strong {
+  margin-right: 10px;
+}
+.filter-bar input {
+  display: inline;
+  padding: 3px 3px 3px 5px;
+  height: 21px;
+  width: 100px;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  margin: 0 10px 0 0;
+}
+.filter-item {
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+}
+.slc-btn input {
+  cursor: pointer;
+  width: 20px;
+  outline: none;
+}
+.slc-btn {
+  display: flex;
+  align-items: center;
+}
+.bulk {
+  display: flex;
+}
+.bulk-btn {
+  padding: 7px;
+  font-weight: bold;
+  background-color: transparent;
+  border-radius: 3px;
+  cursor: pointer;
+  outline: none;
+}
+#b-del {
+  margin-right: 10px;
+  border: 1px solid red;
+  color: red;
+}
+#b-del:hover {
+  color: rgb(209, 5, 5);
+  border-color: rgb(209, 5, 5);
+}
+#b-done {
+  border: 1px solid rgb(0, 224, 0);
+  color: rgb(0, 224, 0);
+}
+#b-done:hover {
+  border-color: rgb(0, 189, 0);
+  color: rgb(0, 189, 0);
+}
+.empty-msg {
+  width: 716px;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 30px;
+  border: 2px dashed #1e293b;
+  color: #1e293b;
+  padding: 40px;
+}
+.empty-msg p {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.empty-msg button {
+  padding: 10px;
+  border: none;
+  background-color: #1e293b;
+  cursor: pointer;
+  color: white;
+  border-radius: 50px;
+}
+.empty-msg button:hover {
+  color: rgb(224, 224, 224);
+  background-color: #243146;
+}
+.b-i {
+  margin-right: 5px;
+}
+.task {
+  position: relative;
+  background-color: white;
+  color: #1e293b;
+  padding: 15px 20px 20px 20px;
+  border-radius: 5px;
+  margin-top: 30px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+.task-btns {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.task h2 {
+  width: 60%;
+}
+.task p {
+  font-weight: bold;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  line-height: 1.5;
+}
+.task input {
+  cursor: pointer;
+  width: 20px;
+  outline: none;
+  margin: 0 0 10px 0;
+}
+.task span {
+  font-weight: bold;
+}
+.task-btns button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 7px;
+  border-radius: 50%;
+}
+.del {
+  margin-left: 5px;
+  color: red;
+  background-color: rgba(216, 216, 216, 0.5);
+}
+.del:hover {
+  color: rgb(199, 0, 0);
+  background-color: rgba(196, 196, 196, 0.5);
+}
+.edit {
+  margin-right: 10px;
+  color: green;
+  background-color: rgba(216, 216, 216, 0.5);
+}
+.edit:hover {
+  background-color: rgba(196, 196, 196, 0.5);
+  color: rgb(0, 100, 0);
+}
+.task-att {
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.att span {
+  margin-left: 5px;
+  font-weight: 400;
+  font-size: 15px;
+  color: white;
+}
+.att-i {
+  color: #3b82f6;
+}
+.att {
+  padding: 7px 11px 7px 7px;
+  border-radius: 5px;
+  background-color: #1e293b;
+}
+.pin {
+  color: #94a3b8;
+}
+.done-i {
+  margin-left: 5px;
+  color: green;
+}
+.progress-i {
+  margin: 0 2px 0 5px;
+  color: orange;
+}
+.todo-i {
+  margin-left: 5px;
+  color: #3b82f6;
+}
+.low-i {
+  margin-left: 5px;
+  color: green;
+}
+.medium-i {
+  margin: 0 2px 0 5px;
+  color: orange;
+}
+.high-i {
+  margin-left: 5px;
+  color: red;
+}
+.tag-i {
+  color: goldenrod;
+}
+.meta-data {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+.p-spn {
+  display: flex;
+  align-items: center;
+}
+.date-i {
+  color: chocolate;
+}
+@media (max-width: 1115px) {
+  .empty-msg {
+    width: 576px;
+  }
+  .form textarea {
+    height: 90px;
+    width: 650px;
+  }
+  .date {
+    width: 660px;
+  }
+  .in {
+    width: 660px;
+  }
+  .tag {
+    width: 317px;
+  }
+  .select {
+    width: 330px;
+  }
+  .form {
+    padding: 20px 25px 25px 25px;
+  }
+  .btn {
+    width: 330px;
+  }
+  .add-btn {
+    width: 673px;
+  }
+  .att-con {
+    width: 665px;
+  }
+  .filter-bar {
+    height: 70px;
+    padding: 10px;
+    position: relative;
+    display: block;
+  }
+  .bulk {
+    position: absolute;
+    left: 150px;
+  }
+  .slc-btn {
+    margin-top: 15px;
+  }
+  .bulk {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 900px) {
+  .task-btns button {
+    font-size: 18px;
+    padding: 6px 5px 4px 5px;
+  }
+  .empty-msg {
+    width: 303px;
+  }
+  .filter-bar {
+    height: 105px;
+  }
+  .sel {
+    width: 368px;
+  }
+  .sel select,
+  .sel input {
+    margin-right: 25px;
+    margin-bottom: 10px;
+  }
+  .sel input {
+    margin-left: 25px;
+  }
+  .slc-btn {
+    margin-top: 5px;
+  }
+  .bulk {
+    margin-top: 0;
+  }
+}
+@media (max-width: 800px) {
+  .form textarea {
+    height: 80px;
+    width: 500px;
+  }
+  .date {
+    width: 510px;
+  }
+  .in {
+    width: 510px;
+  }
+  .add-btn {
+    width: 523px;
+  }
+  .tag {
+    width: 242px;
+  }
+  .select {
+    width: 255px;
+  }
+  .btn {
+    width: 255px;
+  }
+  .att-con {
+    width: 510px;
+  }
+}
+@media (max-width: 750px) {
+  .filter-con {
+    top: 70px;
+  }
+  .task h2 {
+    font-size: 23px;
+  }
+  .task-btns button {
+    font-size: 16px;
+    padding: 5px 4px 4px 4px;
+  }
+  .task-body {
+    padding: 20px;
+  }
+  .att span {
+    font-size: 13px;
+  }
+  .att-i {
+    font-size: 15px;
+  }
+  .att {
+    padding: 6px 10px 6px 6px;
+  }
+}
+@media (max-width: 650px) {
+  .in {
+    margin: 15px 0 0 0;
+    width: 410px;
+  }
+  .add-btn {
+    width: 423px;
+  }
+  .label {
+    margin-top: 10px;
+  }
+  .cross {
+    height: 25px;
+    width: 25px;
+    font-size: 12px;
+  }
+  .btn {
+    width: 205px;
+  }
+  .title,
+  .date,
+  .tag {
+    height: 16px;
+  }
+  .att-con {
+    width: 415px;
+    margin-top: 15px;
+    gap: 15px;
+  }
+  .form textarea {
+    height: 70px;
+    width: 400px;
+  }
+  .date {
+    width: 410px;
+  }
+  .tag {
+    width: 192px;
+  }
+  .select {
+    width: 205px;
+    margin-top: 15px;
+  }
+  .form {
+    padding: 15px 20px 20px 20px;
+  }
+}
+@media (max-width: 610px) {
+  .filter-con {
+    top: 120px;
+  }
+}
+@media (max-width: 600px) {
+  .task-body {
+    padding: 10px;
+  }
+}
+@media (max-width: 550px) {
+  .empty-msg {
+    width: 185px;
+  }
+  .filter-bar {
+    height: auto;
+    padding-right: 0;
+  }
+  .sel {
+    width: 260px;
+  }
+  .sel select,
+  .sel input {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .sel input {
+    margin-left: 25px;
+  }
+  .bulk {
+    position: static;
+    margin-bottom: 10px;
+  }
+  .sel strong {
+    font-size: 16px;
+  }
+  .head {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .filter-con {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 510px) {
+  .task h2 {
+    font-size: 20px;
+  }
+  .task p {
+    margin: 5px 0;
+    font-size: 15px;
+    line-height: 1.3;
+  }
+  .task span {
+    font-size: 15px;
+  }
+  .task-btns button {
+    font-size: 16px;
+    padding: 5px 4px 4px 4px;
+  }
+  .att span {
+    font-size: 13px;
+  }
+  .att span {
+    font-size: 12px;
+  }
+  .att-i {
+    font-size: 14px;
+  }
+  .att {
+    padding: 5px 9px 5px 5px;
+  }
+  .in {
+    width: 290px;
+  }
+  .add-btn {
+    width: 303px;
+  }
+  .btn {
+    width: 303px;
+  }
+  .att-con {
+    width: 295px;
+  }
+  .form textarea {
+    width: 280px;
+  }
+  .date {
+    width: 290px;
+  }
+  .tag {
+    width: 290px;
+  }
+  .select {
+    width: 145px;
+  }
+  .btn {
+    display: block;
+  }
+  #csl {
+    margin: 15px 0 0 0;
+  }
+}
+@media (max-width: 390px) {
+  .form {
+    padding: 10px 15px 15px 15px;
+  }
+}

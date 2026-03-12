@@ -1,0 +1,167 @@
+.pro-body {
+  padding: 30px;
+  position: relative;
+}
+.pro-details {
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background-color: white;
+  color: #1e293b;
+}
+.pro-details img {
+  width: 65%;
+}
+.pro-text {
+  width: 73%;
+}
+.pro-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 316px;
+  height: 360px;
+  background-color: gainsboro;
+}
+.pro-details span,
+p {
+  display: block;
+  margin-top: 10px;
+}
+.pro-details p {
+  line-height: 1.5;
+}
+.pro-load,
+.pro-error,
+.not-pro {
+  margin-top: 170px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  z-index: 1;
+}
+.pro-load {
+  color: #1e293b;
+}
+.pro-error {
+  color: red;
+}
+@media (max-width: 1115px) {
+  .pro-img {
+    height: 340px;
+  }
+}
+@media (max-width: 1000px) {
+  .pro-img {
+    width: 300px;
+    height: 320px;
+  }
+}
+@media (max-width: 870px) {
+  .pro-img {
+    width: 250px;
+    height: 300px;
+  }
+  .pro-details img {
+    width: 73%;
+  }
+}
+@media (max-width: 750px) {
+  .pro-body {
+    padding: 20px;
+  }
+  .pro-img {
+    width: 200px;
+    height: 250px;
+  }
+  .pro-details h2 {
+    font-size: larger;
+  }
+}
+@media (max-width: 655px) {
+  .pro-load,
+  .pro-error,
+  .not-pro {
+    font-size: 18px;
+  }
+  .pro-details span,
+  p {
+    margin-top: 7px;
+  }
+  .pro-details p {
+    line-height: 1.4;
+  }
+  .pro-img {
+    height: 235px;
+  }
+}
+@media (max-width: 600px) {
+  .pro-details h2 {
+    font-size: large;
+  }
+  .pro-details span,
+  p {
+    margin-top: 5px;
+  }
+  .pro-details p {
+    line-height: 1.3;
+  }
+  .pro-details img {
+    width: 78%;
+  }
+}
+@media (max-width: 530px) {
+  .pro-details h2 {
+    font-size: 15px;
+  }
+  .pro-details span,
+  p {
+    margin-top: 5px;
+  }
+  .pro-details p {
+    font-size: 15px;
+    line-height: normal;
+  }
+  .pro-img {
+    height: 225px;
+  }
+  .pro-details {
+    padding: 10px;
+  }
+}
+@media (max-width: 470px) {
+  .pro-details h2 {
+    font-size: 14px;
+  }
+  .pro-details p {
+    font-size: 13px;
+  }
+  .pro-details .price {
+    font-size: 17px;
+  }
+  .pro-details .rating {
+    font-size: 14px;
+  }
+}
+@media (max-width: 435px) {
+  .pro-details img {
+    width: 34%;
+  }
+  .pro-details {
+    display: block;
+  }
+  .pro-img {
+    margin-bottom: 5px;
+    width: auto;
+  }
+  .pro-text {
+    width: auto;
+  }
+}
+@media (max-width: 405px) {
+  .pro-details img {
+    width: 37.5%;
+  }
+}
