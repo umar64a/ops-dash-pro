@@ -199,10 +199,11 @@
 .h-f {
   position: sticky;
   top: 70px;
-  background-color: #f1f5f9;
+  padding: 12px 10px 12px 10px;
+  background: rgba(248, 250, 252, 0.75);
+  backdrop-filter: blur(8px);
   color: #1e293b;
   font-weight: normal;
-  border: 1px solid #1e293b;
   margin: 0 0 30px;
 }
 .f-icon {

@@ -1,5 +1,23 @@
 body {
-  background-color: #f1f5f9;
+  background:
+    radial-gradient(circle at top left, rgba(75, 192, 192, 0.35), transparent 50%),
+    radial-gradient(circle at top right, rgba(54, 162, 235, 0.35), transparent 50%),
+    radial-gradient(circle at bottom left, rgba(255, 99, 132, 0.25), transparent 50%),
+    radial-gradient(circle at bottom right, rgba(153, 102, 255, 0.25), transparent 50%),
+    linear-gradient(120deg, #f8fafc, #e2e8f0, #f1f5f9);
+  background-size: 220% 220%;
+  animation: gradientMove 8s ease infinite;
+}
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 .login img {
   height: 55px;

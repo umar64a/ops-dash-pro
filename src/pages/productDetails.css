@@ -11,6 +11,9 @@
   background-color: white;
   color: #1e293b;
 }
+.pro-body h1 {
+  color: #1e293b;
+}
 .pro-details img {
   width: 65%;
 }

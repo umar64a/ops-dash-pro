@@ -66,14 +66,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: gainsboro;
+  background: rgba(147, 181, 214, 0.75);
   cursor: pointer;
   height: 255px;
   width: 240px;
   margin-bottom: 10px;
 }
 .img-con:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+  background: rgba(119, 146, 173, 0.75);
 }
 .img-con:hover img {
   opacity: 0.8;
