@@ -26,7 +26,7 @@
   align-items: center;
   width: 316px;
   height: 360px;
-  background-color: gainsboro;
+  background: rgba(147, 181, 214, 0.75);
 }
 .pro-details span,
 p {
@@ -71,9 +71,14 @@ p {
     width: 73%;
   }
 }
-@media (max-width: 750px) {
+@media (max-width: 815px) {
   .pro-body {
     padding: 20px;
+  }
+}
+@media (max-width: 750px) {
+  .pro-body {
+    padding: 10px;
   }
   .pro-img {
     width: 200px;

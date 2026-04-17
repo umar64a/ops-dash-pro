@@ -67,7 +67,7 @@
 }
 @media (max-width: 750px) {
   .weather-body {
-    height: 89.3vh;
+    height: 84.76vh;
   }
 }
 @media (max-width: 610px) {
@@ -77,6 +77,6 @@
     font-size: 18px;
   }
   .weather-body {
-    height: 81.4vh;
+    height: 76.85vh;
   }
 }

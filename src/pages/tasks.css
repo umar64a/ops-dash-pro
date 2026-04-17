@@ -550,6 +550,11 @@
     margin-top: 0;
   }
 }
+@media (max-width: 815px) {
+  .task-body {
+    padding: 20px;
+  }
+}
 @media (max-width: 800px) {
   .form textarea {
     height: 80px;
@@ -578,6 +583,9 @@
   }
 }
 @media (max-width: 750px) {
+  .task-body {
+    padding: 10px;
+  }
   .filter-con {
     top: 70px;
   }
@@ -587,9 +595,6 @@
   .task-btns button {
     font-size: 16px;
     padding: 5px 4px 4px 4px;
-  }
-  .task-body {
-    padding: 20px;
   }
   .att span {
     font-size: 13px;
@@ -651,11 +656,6 @@
 @media (max-width: 610px) {
   .filter-con {
     top: 120px;
-  }
-}
-@media (max-width: 600px) {
-  .task-body {
-    padding: 10px;
   }
 }
 @media (max-width: 550px) {

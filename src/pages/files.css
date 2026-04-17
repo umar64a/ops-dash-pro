@@ -145,12 +145,6 @@
   display: block;
   margin-top: 13px;
 }
-.emt {
-  margin-top: 35px;
-  text-align: center;
-  color: #1e293b;
-  font-size: 17px;
-}
 .icon-code {
   color: rgb(2, 167, 2);
   background-color: rgb(43, 77, 43);
@@ -204,7 +198,13 @@
   backdrop-filter: blur(8px);
   color: #1e293b;
   font-weight: normal;
-  margin: 0 0 30px;
+  margin: 0;
+}
+.emt {
+  margin-top: 29px;
+  text-align: center;
+  color: #1e293b;
+  font-size: 17px;
 }
 .f-icon {
   padding: 7px 5px 7px 5px;
@@ -262,6 +262,11 @@
     width: 250px;
   }
 }
+@media (max-width: 815px) {
+  .file-body {
+    padding: 20px;
+  }
+}
 @media (max-width: 750px) {
   .upload-con {
     top: 110px;
@@ -276,6 +281,9 @@
   .file {
     font-size: 15px;
     padding: 8px;
+  }
+  .h-f {
+    padding: 10px 8px 10px 8px;
   }
   .emt {
     margin-top: 50px;
@@ -356,6 +364,9 @@
   }
   .h-f {
     top: 113px;
+  }
+  .emt {
+    margin-top: 40px;
   }
 }
 @media (max-width: 550px) {

@@ -9,3 +9,13 @@
   text-decoration: underline;
   color: #265aad;
 }
+@media (max-width: 815px) {
+  .bread {
+    margin-left: 22px;
+  }
+}
+@media (max-width: 750px) {
+  .bread {
+    margin-left: 12px;
+  }
+}
